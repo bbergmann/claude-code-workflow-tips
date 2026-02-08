@@ -1,6 +1,6 @@
 # 🧠⚡ Claude Code Mastery
 
-Master Claude Code workflows in 15 minutes with this interactive training experience!
+Level up your development workflow with Claude Code in 15 minutes. Real examples in Python, JavaScript, and more.
 
 ![Claude Code Mastery Demo](screenshot.png)
 
@@ -35,9 +35,10 @@ Want to use Claude Code Mastery directly in Google Gemini? [Follow these instruc
 
 ## 🌟 What's Inside?
 - **9 Progressive Levels:** From planning to parallel execution mastery.
-- **Real Workflow Tips:** Curated from experienced Claude Code users.
-- **The Boss Battle:** Apply all techniques in a real-world development scenario.
-- **Quick Tips Mode:** Get instant advice without the full course.
+- **Real Code Examples:** Python, JavaScript/TypeScript, and CLI tools.
+- **Developer Workflows:** Git worktrees, tmux sessions, custom CLI skills.
+- **The Boss Battle:** Build a GitHub Analytics CLI using all techniques.
+- **Quick Tips Mode:** Get instant workflow advice for your specific challenge.
 
 ## 📚 Curriculum Overview
 | Level | Topic |

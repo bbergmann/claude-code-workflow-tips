@@ -1,74 +1,75 @@
 {
     "total_time_estimate": "15 mins",
+    "target_audience": "Software Engineers & Developers",
     "levels": [
         {
             "id": "intro",
             "title": "Level 0: Welcome to Claude Code Mastery! 🧠",
-            "description": "The workflow revolution.",
-            "content_summary": "Welcome! You're about to master the workflows that separate casual users from Claude Code power users.\n\n**Why it matters:**\n- 🚀 **10x Productivity:** Do in minutes what takes hours.\n- 🧠 **Consistent Quality:** Same great results every session.\n- ⚡ **Flow State:** Less friction, more building.\n\n**The Plan:** 9 levels, about 15 mins total. Let's turn you into a Workflow Wizard! 🧙‍♂️",
+            "description": "Level up your dev workflow.",
+            "content_summary": "Welcome! You're about to master the workflows that separate junior devs from 10x engineers using Claude Code.\n\n**Why it matters:**\n- 🚀 **Ship Faster:** Build features in hours, not days.\n- 🧠 **Better Architecture:** Plan before you code.\n- ⚡ **Debug Smarter:** Context-aware problem solving.\n\n**The Plan:** 9 levels, about 15 mins total. Real code examples in Python, JavaScript, and more. Let's build! 🧙‍♂️",
             "challenge_type": "acknowledgment"
         },
         {
             "id": "plan_mode",
             "title": "Level 1: Start with Plan Mode",
-            "description": "Plan first, code second.",
-            "content_summary": "**The Concept:**\nDon't jump straight into coding. Use plan mode to think through the approach first.\n\n**The Pro Move:**\n\"I sit, I ask CC what to do (in plan mode), I review and refine the plan and I ask CC to implement.\"\n\n**Example:**\n❌ 'Build me a user authentication system.'\n✅ 'Let's plan a user authentication system. What are the components we need, security considerations, and implementation order?'",
+            "description": "Architect before you implement.",
+            "content_summary": "**The Concept:**\nDon't jump straight into coding. Use plan mode to design the architecture first.\n\n**The Pro Move:**\n\"I sit, I ask CC what to do (in plan mode), I review and refine the plan and I ask CC to implement.\"\n\n**Python Example:**\n❌ 'Build me a REST API for user management.'\n✅ 'Let's plan a REST API for user management. I need:\n- FastAPI with SQLAlchemy ORM\n- JWT authentication flow\n- CRUD endpoints for users\n- Rate limiting middleware\nWhat's the folder structure and implementation order?'\n\n**JavaScript Example:**\n❌ 'Create a real-time chat app.'\n✅ 'Let's architect a real-time chat app:\n- Next.js 14 with App Router\n- Socket.io for WebSocket connections\n- PostgreSQL with Prisma ORM\n- Redis for pub/sub scaling\nBreak down the implementation phases.'",
             "challenge_type": "plan_creation"
         },
         {
             "id": "task_breakdown",
             "title": "Level 2: Break Down Tasks",
-            "description": "Small bites, big results.",
-            "content_summary": "**The Concept:**\nFeed Claude Code small, manageable tasks rather than large features. Quality goes up dramatically.\n\n**The Pro Move:**\n\"I feed it small tasks at a time, not full features.\"\n\n**Example:**\n❌ 'Build the entire checkout flow.'\n✅ 'First, let's create the cart summary component. Then we'll add the payment form. Then integrate with Stripe.'",
+            "description": "Small commits, big results.",
+            "content_summary": "**The Concept:**\nFeed Claude Code small, atomic tasks. Think like you're writing git commits.\n\n**The Pro Move:**\n\"I feed it small tasks at a time, not full features.\"\n\n**Python Example - Building a CLI Tool:**\n❌ 'Build a complete database migration tool.'\n✅ Step-by-step breakdown:\n1. 'Create the CLI skeleton with argparse and --version flag'\n2. 'Add the migration file discovery logic in migrations/'\n3. 'Implement the PostgreSQL connection manager'\n4. 'Add the `up` command to run pending migrations'\n5. 'Add the `down` command with rollback support'\n6. 'Add dry-run mode with SQL preview'\n\n**JavaScript Example - Building an API:**\n❌ 'Build the entire e-commerce checkout.'\n✅ Atomic tasks:\n1. 'Create CartService class with add/remove/update methods'\n2. 'Add inventory validation middleware'\n3. 'Implement Stripe PaymentIntent creation'\n4. 'Build the order confirmation email template'\n5. 'Add webhook handler for payment events'",
             "challenge_type": "task_decomposition"
         },
         {
             "id": "claude_md",
             "title": "Level 3: Master CLAUDE.md",
-            "description": "Your persistent brain.",
-            "content_summary": "**The Concept:**\nCLAUDE.md is your secret weapon for consistency across sessions. Claude reads it automatically every time.\n\n**The Pro Move:**\n\"Claude reads it automatically on every session. Put your conventions, gotchas, and architecture decisions there.\"\n\n**What to Include:**\n- Project conventions and coding style\n- Known gotchas and workarounds\n- Architecture decisions and rationale\n- Common commands and workflows",
+            "description": "Your project's brain.",
+            "content_summary": "**The Concept:**\nCLAUDE.md is auto-loaded every session. It's your project's institutional knowledge.\n\n**The Pro Move:**\n\"Claude reads it automatically on every session. Put your conventions, gotchas, and architecture decisions there.\"\n\n**Example CLAUDE.md for a Python Project:**\n```markdown\n# Project: DataPipeline\n\n## Tech Stack\n- Python 3.11, FastAPI, SQLAlchemy 2.0, Celery\n- PostgreSQL 15, Redis 7\n\n## Conventions\n- Use `ruff` for linting, `black` for formatting\n- Type hints required on all public functions\n- Tests in `tests/` mirror `src/` structure\n- Async-first: use `async def` for I/O operations\n\n## Gotchas\n- SQLAlchemy sessions must use `async with` context\n- Celery tasks need `@shared_task` not `@app.task`\n- Always use `timezone.utc` for datetime objects\n\n## Key Commands\n- `make test` - Run pytest with coverage\n- `make migrate` - Alembic migrations\n- `make dev` - Start with hot reload\n```\n\n**Example for a JavaScript/TypeScript Project:**\n```markdown\n# Project: NextCommerce\n\n## Stack\n- Next.js 14 (App Router), TypeScript strict\n- Prisma ORM, PostgreSQL, Redis\n\n## Conventions  \n- Components: PascalCase in `components/`\n- Server actions in `actions/` directory\n- Use `cn()` utility for conditional classes\n- Zod schemas for all form validation\n\n## Gotchas\n- Always 'use server' for database operations\n- Prisma client singleton in `lib/prisma.ts`\n- Image optimization: use next/image only\n```",
             "challenge_type": "claude_md_creation"
         },
         {
             "id": "context_management",
             "title": "Level 4: Context Management",
-            "description": "Stay lean, stay fast.",
-            "content_summary": "**The Concept:**\nContext bloat kills performance. Use smart commands and keep utilization low.\n\n**The Pro Moves:**\n1. \"So instead of /compact: /wrapup saves what matters, /clear, then /catchup picks it up.\"\n2. \"One non-obvious trick: keep context utilization below ~50%.\"\n\n**Commands to Master:**\n- `/wrapup` - Save important context\n- `/clear` - Reset the context\n- `/catchup` - Restore from wrapup",
+            "description": "Stay lean, debug faster.",
+            "content_summary": "**The Concept:**\nContext bloat kills accuracy. Manage it like memory in your code.\n\n**The Pro Moves:**\n1. \"So instead of /compact: /wrapup saves what matters, /clear, then /catchup picks it up.\"\n2. \"One non-obvious trick: keep context utilization below ~50%.\"\n\n**When to /wrapup (Save State):**\n- After completing a major feature branch\n- Before switching to debugging a different module\n- When context is getting heavy with file contents\n\n**Example Workflow:**\n```bash\n# You've been building auth for 30 minutes...\n> /wrapup\n# Saves: 'Completed JWT auth with refresh tokens.\n#         Files: auth/jwt.py, auth/middleware.py, tests/test_auth.py\n#         Next: Add rate limiting'\n\n> /clear\n# Fresh context\n\n> /catchup  \n# Restores context, ready to continue\n```\n\n**Python Debugging Strategy:**\nKeep context focused on the bug:\n1. Load only the failing test + relevant module\n2. Don't let Claude read unrelated files\n3. /wrapup after each bug fix",
             "challenge_type": "context_optimization"
         },
         {
             "id": "custom_skills",
             "title": "Level 5: Custom Skills",
-            "description": "Automate the repetitive.",
-            "content_summary": "**The Concept:**\nCreate custom skills to automate repetitive tasks and improve efficiency.\n\n**The Pro Move:**\n\"Custom skills in ~/.claude/commands have been the biggest unlock for me.\"\n\n**How to Create:**\n1. Create a folder: `~/.claude/commands/`\n2. Add markdown files with your custom workflows\n3. Reference them with slash commands\n\n**Example Skills:**\n- `/review` - Code review checklist\n- `/test` - Generate test cases\n- `/docs` - Documentation template",
+            "description": "Automate your workflow.",
+            "content_summary": "**The Concept:**\nCreate reusable commands in `~/.claude/commands/` for your dev workflows.\n\n**The Pro Move:**\n\"Custom skills in ~/.claude/commands have been the biggest unlock for me.\"\n\n**Example: /review Command**\n`~/.claude/commands/review.md`:\n```markdown\n---\ndescription: \"Code review with security focus\"\n---\nReview the staged changes with focus on:\n1. Security vulnerabilities (SQL injection, XSS, auth bypass)\n2. Performance issues (N+1 queries, memory leaks)\n3. Error handling completeness\n4. Test coverage gaps\n\nOutput format:\n🔴 Critical | 🟡 Warning | 🟢 Approved\n```\n\n**Example: /test-gen Command**\n`~/.claude/commands/test-gen.md`:\n```markdown\n---\ndescription: \"Generate pytest tests for a module\"\n---\nFor the given Python module, generate:\n1. Unit tests with pytest fixtures\n2. Edge cases and error conditions  \n3. Mock external dependencies\n4. Use `pytest.mark.parametrize` where applicable\n\nFollow AAA pattern: Arrange, Act, Assert\n```\n\n**Example: /api-endpoint Command**\n```markdown\n---\ndescription: \"Scaffold a new FastAPI endpoint\"\n---\nCreate a new endpoint with:\n1. Pydantic request/response schemas\n2. OpenAPI documentation\n3. Error handling with HTTPException\n4. Corresponding test file\n```",
             "challenge_type": "skill_creation"
         },
         {
             "id": "parallel_sessions",
             "title": "Level 6: Parallel Power",
-            "description": "Multiply yourself.",
-            "content_summary": "**The Concept:**\nRun multiple Claude Code instances in parallel for maximum throughput.\n\n**The Pro Move:**\n\"I run 5 Claudes in parallel in my terminal.\"\n\n**Tools to Use:**\n- **tmux:** Terminal multiplexer for multiple sessions\n- **Git worktrees:** Separate working directories for parallel branches\n\n**Example Setup:**\n```bash\n# Create worktrees for parallel work\ngit worktree add ../feature-a feature-a\ngit worktree add ../feature-b feature-b\n# Run Claude in each directory\n```",
+            "description": "Multiply your throughput.",
+            "content_summary": "**The Concept:**\nRun multiple Claude instances for parallel feature development.\n\n**The Pro Move:**\n\"I run 5 Claudes in parallel in my terminal.\"\n\n**Git Worktree Setup (Recommended):**\n```bash\n# Create isolated working directories\ngit worktree add ../feature-auth feature/auth\ngit worktree add ../feature-api feature/api  \ngit worktree add ../bugfix-perf bugfix/performance\n\n# Each worktree gets its own Claude instance\ncd ../feature-auth && claude\ncd ../feature-api && claude\ncd ../bugfix-perf && claude\n```\n\n**tmux Session Layout:**\n```bash\n# Create a dev session with 4 panes\ntmux new-session -s dev\n# Split: Ctrl+b \" (horizontal), Ctrl+b % (vertical)\n\n# Name windows for context\nCtrl+b , # Rename to 'auth-feature'\n```\n\n**Real Workflow Example:**\n```\nPane 1: Claude working on user authentication\nPane 2: Claude building the API endpoints  \nPane 3: Claude writing integration tests\nPane 4: Your terminal for git operations\n```\n\n**Pro Tips:**\n- Use different CLAUDE.md per worktree for focused context\n- Merge frequently to avoid conflicts\n- One Claude per logical feature boundary",
             "challenge_type": "parallel_setup"
         },
         {
             "id": "project_integration",
             "title": "Level 7: Project Integration",
-            "description": "Tools and documentation.",
-            "content_summary": "**The Concept:**\nIntegrate Claude Code with project management tools and embrace markdown documentation.\n\n**The Pro Moves:**\n1. \"I'm using https://github.com/cowwoc/claude-code-cat/ at the moment for solo dev work.\"\n2. \"I'd recommend going all in on markdown.\"\n\n**Best Practices:**\n- Use markdown for all documentation\n- Keep architectural decisions in docs/\n- Integrate with task tracking tools\n- Document as you build, not after",
+            "description": "Tools and documentation patterns.",
+            "content_summary": "**The Concept:**\nIntegrate Claude Code with your dev ecosystem and document as you build.\n\n**The Pro Moves:**\n1. \"I'm using https://github.com/cowwoc/claude-code-cat/ for solo dev work.\"\n2. \"Go all in on markdown.\"\n\n**Recommended Folder Structure:**\n```\nproject/\n├── CLAUDE.md           # Auto-loaded context\n├── docs/\n│   ├── ARCHITECTURE.md # System design decisions\n│   ├── API.md          # Endpoint documentation\n│   ├── DECISIONS.md    # ADRs (Architecture Decision Records)\n│   └── RUNBOOK.md      # Operations & debugging\n├── .claude/\n│   └── commands/       # Project-specific skills\n├── src/\n└── tests/\n```\n\n**Architecture Decision Record Template:**\n```markdown\n# ADR-001: Use PostgreSQL over MongoDB\n\n## Status: Accepted\n\n## Context\nNeed a database for user data with complex relationships.\n\n## Decision\nPostgreSQL with SQLAlchemy ORM.\n\n## Consequences\n- ✅ Strong consistency, ACID guarantees\n- ✅ Complex queries with JOINs\n- ⚠️ Requires schema migrations\n```\n\n**CI Integration Tip:**\nAdd Claude-generated docs to your PR template:\n```markdown\n## Changes\n<!-- Claude: summarize the changes -->\n\n## Testing\n<!-- Claude: list test commands -->\n```",
             "challenge_type": "integration_plan"
         },
         {
             "id": "boss_battle",
             "title": "Level 8: 👹 THE BOSS BATTLE",
-            "description": "The Final Test.",
-            "content_summary": "**The Challenge:**\nYou're starting a new project: a CLI tool for managing your dotfiles. Apply ALL the techniques you've learned!\n\n**Requirements:**\n1. **Plan Mode:** Create a project plan before any code.\n2. **CLAUDE.md:** Set up your conventions file.\n3. **Task Breakdown:** Split into 5+ small tasks.\n4. **Context Management:** Plan your /wrapup points.\n5. **Custom Skill:** Create one reusable skill for this project.\n\nShow me your complete workflow strategy!",
+            "description": "Build a real feature.",
+            "content_summary": "**The Challenge:**\nYou're building a **Python CLI for GitHub Repository Analytics**. Apply ALL techniques!\n\n**Requirements:**\n1. **Plan Mode:** Design the architecture first\n   - CLI framework (Typer or Click)\n   - GitHub API integration (httpx + async)\n   - Data storage (SQLite)\n   - Output formatting (Rich library)\n\n2. **CLAUDE.md:** Create your project context file\n\n3. **Task Breakdown:** Split into atomic tasks:\n   - Task 1: CLI skeleton with --help\n   - Task 2: GitHub auth with token\n   - Task 3: Fetch repo stats endpoint\n   - Task 4: SQLite caching layer\n   - Task 5: Rich table output\n   - Task 6: pytest test suite\n\n4. **Custom Skill:** Create a `/analyze-repo` command\n\n5. **Context Management:** Plan your /wrapup checkpoints\n\n**Show me your complete implementation strategy with code snippets!**\n\n**Bonus:** How would you parallelize this with git worktrees?",
             "challenge_type": "boss_battle"
         },
         {
             "id": "graduation",
             "title": "Level 9: 🎓 GRADUATION",
-            "description": "You made it!",
-            "content_summary": "Congratulations! You have mastered Claude Code workflows!\n\nYour certificate is being generated now...\n\n**Continue Learning:**\n- r/ClaudeAI - General Claude discussions\n- r/ClaudeCode - Specific to Claude Code\n\nThese communities are great places to ask questions and learn from other power users!",
+            "description": "You're a Workflow Wizard!",
+            "content_summary": "Congratulations, Engineer! You've mastered Claude Code workflows!\n\n**Your New Superpowers:**\n- 📋 Plan Mode for architecture-first development\n- 🧩 Task breakdown for atomic commits\n- 🧠 CLAUDE.md for persistent context\n- 💾 Context management for performance\n- ⚡ Custom skills for workflow automation\n- 🔀 Parallel sessions for 10x throughput\n- 📚 Documentation patterns for maintainability\n\n**Continue Learning:**\n- [r/ClaudeAI](https://reddit.com/r/ClaudeAI) - General Claude discussions\n- [r/ClaudeCode](https://reddit.com/r/ClaudeCode) - Developer-focused tips\n\n**Recommended Next Steps:**\n1. Create 3 custom skills for your daily workflow\n2. Set up git worktrees for your main project\n3. Write a comprehensive CLAUDE.md for your codebase\n\nYour certificate is being generated now... 🧙‍♂️✨",
             "challenge_type": "reward"
         }
     ]
