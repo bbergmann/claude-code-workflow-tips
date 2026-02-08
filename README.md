@@ -54,6 +54,25 @@ Want to use Claude Code Mastery directly in Google Gemini? [Follow these instruc
 | 8 | 👹 Boss Battle |
 | 9 | 🎓 Graduation |
 
+## 💡 Key Workflow Tips
+
+### General Workflow
+- **Start with Plan Mode:** "I sit, I ask CC what to do (in plan mode), I review and refine the plan and I ask CC to implement."
+- **Break Down Tasks:** "I feed it small tasks at a time, not full features." Feed Claude Code small, manageable tasks rather than large features to ensure higher quality output.
+- **Use CLAUDE.md:** "Claude reads it automatically on every session. Put your conventions, gotchas, and architecture decisions there." This file is crucial for maintaining context and consistency across sessions.
+
+### Context Management
+- **Wrap Up and Catch Up:** "So instead of /compact: /wrapup saves what matters, /clear, then /catchup picks it up." Use these commands to manage context effectively.
+- **Keep Context Utilization Low:** "One non-obvious trick: keep context utilization below ~50%." Aim to keep the context window below 50% to avoid performance issues.
+
+### Advanced Techniques
+- **Custom Skills:** "Custom skills in ~/.claude/commands have been the biggest unlock for me." Create custom skills to automate repetitive tasks and improve efficiency.
+- **Parallel Sessions:** "I run 5 Claudes in parallel in my terminal." Run multiple Claude Code instances using tools like tmux or Git worktrees.
+
+### Project Management
+- **Use Specific Tools:** "I'm using https://github.com/cowwoc/claude-code-cat/ at the moment for solo dev work." Integrate Claude Code with project management tools for a comprehensive workflow.
+- **Markdown-Based Documentation:** "I'd recommend going all in on markdown." Use Markdown for detailed documentation and architectural decisions.
+
 ## 🌐 Communities
 - [r/ClaudeAI](https://reddit.com/r/ClaudeAI)
 - [r/ClaudeCode](https://reddit.com/r/ClaudeCode)
