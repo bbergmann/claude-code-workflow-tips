@@ -1,0 +1,75 @@
+{
+    "total_time_estimate": "15 mins",
+    "levels": [
+        {
+            "id": "intro",
+            "title": "Level 0: Welcome to Claude Code Mastery! 🧠",
+            "description": "The workflow revolution.",
+            "content_summary": "Welcome! You're about to master the workflows that separate casual users from Claude Code power users.\n\n**Why it matters:**\n- 🚀 **10x Productivity:** Do in minutes what takes hours.\n- 🧠 **Consistent Quality:** Same great results every session.\n- ⚡ **Flow State:** Less friction, more building.\n\n**The Plan:** 9 levels, about 15 mins total. Let's turn you into a Workflow Wizard! 🧙‍♂️",
+            "challenge_type": "acknowledgment"
+        },
+        {
+            "id": "plan_mode",
+            "title": "Level 1: Start with Plan Mode",
+            "description": "Plan first, code second.",
+            "content_summary": "**The Concept:**\nDon't jump straight into coding. Use plan mode to think through the approach first.\n\n**The Pro Move:**\n\"I sit, I ask CC what to do (in plan mode), I review and refine the plan and I ask CC to implement.\"\n\n**Example:**\n❌ 'Build me a user authentication system.'\n✅ 'Let's plan a user authentication system. What are the components we need, security considerations, and implementation order?'",
+            "challenge_type": "plan_creation"
+        },
+        {
+            "id": "task_breakdown",
+            "title": "Level 2: Break Down Tasks",
+            "description": "Small bites, big results.",
+            "content_summary": "**The Concept:**\nFeed Claude Code small, manageable tasks rather than large features. Quality goes up dramatically.\n\n**The Pro Move:**\n\"I feed it small tasks at a time, not full features.\"\n\n**Example:**\n❌ 'Build the entire checkout flow.'\n✅ 'First, let's create the cart summary component. Then we'll add the payment form. Then integrate with Stripe.'",
+            "challenge_type": "task_decomposition"
+        },
+        {
+            "id": "claude_md",
+            "title": "Level 3: Master CLAUDE.md",
+            "description": "Your persistent brain.",
+            "content_summary": "**The Concept:**\nCLAUDE.md is your secret weapon for consistency across sessions. Claude reads it automatically every time.\n\n**The Pro Move:**\n\"Claude reads it automatically on every session. Put your conventions, gotchas, and architecture decisions there.\"\n\n**What to Include:**\n- Project conventions and coding style\n- Known gotchas and workarounds\n- Architecture decisions and rationale\n- Common commands and workflows",
+            "challenge_type": "claude_md_creation"
+        },
+        {
+            "id": "context_management",
+            "title": "Level 4: Context Management",
+            "description": "Stay lean, stay fast.",
+            "content_summary": "**The Concept:**\nContext bloat kills performance. Use smart commands and keep utilization low.\n\n**The Pro Moves:**\n1. \"So instead of /compact: /wrapup saves what matters, /clear, then /catchup picks it up.\"\n2. \"One non-obvious trick: keep context utilization below ~50%.\"\n\n**Commands to Master:**\n- `/wrapup` - Save important context\n- `/clear` - Reset the context\n- `/catchup` - Restore from wrapup",
+            "challenge_type": "context_optimization"
+        },
+        {
+            "id": "custom_skills",
+            "title": "Level 5: Custom Skills",
+            "description": "Automate the repetitive.",
+            "content_summary": "**The Concept:**\nCreate custom skills to automate repetitive tasks and improve efficiency.\n\n**The Pro Move:**\n\"Custom skills in ~/.claude/commands have been the biggest unlock for me.\"\n\n**How to Create:**\n1. Create a folder: `~/.claude/commands/`\n2. Add markdown files with your custom workflows\n3. Reference them with slash commands\n\n**Example Skills:**\n- `/review` - Code review checklist\n- `/test` - Generate test cases\n- `/docs` - Documentation template",
+            "challenge_type": "skill_creation"
+        },
+        {
+            "id": "parallel_sessions",
+            "title": "Level 6: Parallel Power",
+            "description": "Multiply yourself.",
+            "content_summary": "**The Concept:**\nRun multiple Claude Code instances in parallel for maximum throughput.\n\n**The Pro Move:**\n\"I run 5 Claudes in parallel in my terminal.\"\n\n**Tools to Use:**\n- **tmux:** Terminal multiplexer for multiple sessions\n- **Git worktrees:** Separate working directories for parallel branches\n\n**Example Setup:**\n```bash\n# Create worktrees for parallel work\ngit worktree add ../feature-a feature-a\ngit worktree add ../feature-b feature-b\n# Run Claude in each directory\n```",
+            "challenge_type": "parallel_setup"
+        },
+        {
+            "id": "project_integration",
+            "title": "Level 7: Project Integration",
+            "description": "Tools and documentation.",
+            "content_summary": "**The Concept:**\nIntegrate Claude Code with project management tools and embrace markdown documentation.\n\n**The Pro Moves:**\n1. \"I'm using https://github.com/cowwoc/claude-code-cat/ at the moment for solo dev work.\"\n2. \"I'd recommend going all in on markdown.\"\n\n**Best Practices:**\n- Use markdown for all documentation\n- Keep architectural decisions in docs/\n- Integrate with task tracking tools\n- Document as you build, not after",
+            "challenge_type": "integration_plan"
+        },
+        {
+            "id": "boss_battle",
+            "title": "Level 8: 👹 THE BOSS BATTLE",
+            "description": "The Final Test.",
+            "content_summary": "**The Challenge:**\nYou're starting a new project: a CLI tool for managing your dotfiles. Apply ALL the techniques you've learned!\n\n**Requirements:**\n1. **Plan Mode:** Create a project plan before any code.\n2. **CLAUDE.md:** Set up your conventions file.\n3. **Task Breakdown:** Split into 5+ small tasks.\n4. **Context Management:** Plan your /wrapup points.\n5. **Custom Skill:** Create one reusable skill for this project.\n\nShow me your complete workflow strategy!",
+            "challenge_type": "boss_battle"
+        },
+        {
+            "id": "graduation",
+            "title": "Level 9: 🎓 GRADUATION",
+            "description": "You made it!",
+            "content_summary": "Congratulations! You have mastered Claude Code workflows!\n\nYour certificate is being generated now...\n\n**Continue Learning:**\n- r/ClaudeAI - General Claude discussions\n- r/ClaudeCode - Specific to Claude Code\n\nThese communities are great places to ask questions and learn from other power users!",
+            "challenge_type": "reward"
+        }
+    ]
+}
